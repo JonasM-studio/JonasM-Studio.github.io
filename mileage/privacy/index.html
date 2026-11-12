@@ -17,11 +17,11 @@
 
 <main><div class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="meta">Mileage Logbook for iPhone and Android · Last updated 12 November 2026</p>
+  <p class="meta">Mileage Logbook for iPhone and Android · Last updated 13 November 2026</p>
 
   <div class="summary">
     <strong>We don't collect any data from Mileage Logbook. Your drives, places and reports stay on your phone, and we never see them.</strong>
-    <p>There's no account and no server. The app needs your location to record drives. It goes online only to look up street addresses and to load map images, and you can turn maps off.</p>
+    <p>There's no account and no server. The app needs your location to record drives. It goes online only to look up addresses, to load map images and to find driving routes when you ask. You can turn maps off.</p>
   </div>
 
   <nav class="toc" aria-label="On this page">
@@ -54,12 +54,18 @@
     <div class="data-item">
       <h3>Street addresses</h3>
       <p>To show "123 Example St" instead of coordinates, the app asks the address service built into your phone: Apple's on iPhone, and on Android the one your phone provides, usually Google's. That service receives the coordinates of each trip's start and end, under <a href="https://www.apple.com/legal/privacy/">Apple's</a> or <a href="https://policies.google.com/privacy">Google's</a> privacy policy.</p>
-      <p class="when">After each trip, and when you edit a trip's start or end. Nothing is sent to us.</p>
+      <p>When you search for an address while adding or editing a drive, the words you type go to the same service.</p>
+      <p class="when">After each trip, when you edit a trip's start or end, and when you search. Nothing is sent to us.</p>
     </div>
     <div class="data-item">
       <h3>Maps</h3>
       <p>Trip maps are drawn by Apple Maps on iPhone and by Google Maps on Android. To show a map, your phone downloads map images for the area on screen, so Apple or Google receives that area and your phone's IP address. On Android, the Google Maps code in the app also sends Google technical information: your device model and system version, a random identifier for counting users, crash details from the map code, and how you move the map. See <a href="https://developers.google.com/maps/documentation/android-sdk/play-data-disclosure">Google's disclosure</a>. Your trips aren't uploaded.</p>
       <p class="when">Only while a map is on screen. Turn off <em>Show maps</em> in Settings and the app makes no map requests at all.</p>
+    </div>
+    <div class="data-item">
+      <h3>Choosing a route</h3>
+      <p>When you add or edit a drive, you can open <em>Choose a route</em> to see a few driving routes and their distances. To find them, the app sends the drive's start and end points, and nothing else, to Google's route service on Android or Apple Maps on iPhone, under <a href="https://policies.google.com/privacy">Google's</a> or <a href="https://www.apple.com/legal/privacy/">Apple's</a> privacy policy. No trip history and no account information are sent.</p>
+      <p class="when">Only when you open that screen. If you don't, you can type the distance yourself.</p>
     </div>
     <div class="data-item">
       <h3>Checking a route in Google Maps</h3>
@@ -108,6 +114,7 @@
   <h2 id="changes">Changes to this policy</h2>
   <p>If the app ever starts handling data differently, this page will be updated before that version is released, and the date at the top will change. Every past version is kept in the <a href="https://github.com/JonasM-studio/JonasM-Studio.github.io/commits/main/mileage/privacy/index.html">public change history</a>.</p>
   <ul class="changes">
+    <li>13 November 2026: added address search and choosing a route when you add or edit a drive.</li>
     <li>12 November 2026: added maps (Apple Maps on iPhone, Google Maps on Android, can be turned off), checking an estimated route in Google Maps, and the motion sensor on Android.</li>
     <li>2 November 2026: first version.</li>
   </ul>
