@@ -21,7 +21,7 @@
 
   <div class="summary">
     <strong>We don't collect any data from Mileage Logbook. Your drives, places and reports stay on your phone, and we never see them.</strong>
-    <p>There's no account and no server. The app needs your location to record drives. It goes online only to look up addresses, to load map images and to find driving routes when you ask. You can turn maps off.</p>
+    <p>There's no account and no server. The app needs your location to record drives. It goes online only to look up addresses, to load map images, and to search for places and find driving routes when you ask. You can turn maps off.</p>
   </div>
 
   <nav class="toc" aria-label="On this page">
@@ -54,8 +54,7 @@
     <div class="data-item">
       <h3>Street addresses</h3>
       <p>To show "123 Example St" instead of coordinates, the app asks the address service built into your phone: Apple's on iPhone, and on Android the one your phone provides, usually Google's. That service receives the coordinates of each trip's start and end, under <a href="https://www.apple.com/legal/privacy/">Apple's</a> or <a href="https://policies.google.com/privacy">Google's</a> privacy policy.</p>
-      <p>When you search for an address while adding or editing a drive, the words you type go to the same service.</p>
-      <p class="when">After each trip, when you edit a trip's start or end, and when you search. Nothing is sent to us.</p>
+      <p class="when">After each trip, and when you edit a trip's start or end. Nothing is sent to us.</p>
     </div>
     <div class="data-item">
       <h3>Maps</h3>
@@ -63,14 +62,14 @@
       <p class="when">Only while a map is on screen. Turn off <em>Show maps</em> in Settings and the app makes no map requests at all.</p>
     </div>
     <div class="data-item">
-      <h3>Choosing a route</h3>
-      <p>When you add or edit a drive, you can open <em>Choose a route</em> to see a few driving routes and their distances. To find them, the app sends the drive's start and end points, and nothing else, to Google's route service on Android or Apple Maps on iPhone, under <a href="https://policies.google.com/privacy">Google's</a> or <a href="https://www.apple.com/legal/privacy/">Apple's</a> privacy policy. No trip history and no account information are sent.</p>
-      <p class="when">Only when you open that screen. If you don't, you can type the distance yourself.</p>
+      <h3>Searching for a place</h3>
+      <p>When you add or edit a drive, you can search for a place or an address. On Android, the words you type and your phone's last known location (so that nearby places come first) go to Google's place search, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. If that isn't available, the phone's own address service is used instead. On iPhone, the search uses Apple Maps, under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+      <p class="when">Only while you type in the search box. Nothing is sent to us.</p>
     </div>
     <div class="data-item">
-      <h3>Checking a route in Google Maps</h3>
-      <p>When part of a drive had no GPS, the app estimates its distance. On Android you can tap <em>Check route in Google Maps</em> to compare the estimate with a driving route. This opens the Google Maps app, or Google Maps in your browser, with the trip's start and end points, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
-      <p class="when">Only when you tap that button. If you correct the distance, it's saved on your phone.</p>
+      <h3>Choosing a route</h3>
+      <p>When you add or edit a drive, or check the distance of a part of a drive that had no GPS, you can see a few driving routes and their distances. To find them, the app sends the drive's start and end points, and nothing else, to Google's route service on Android or Apple Maps on iPhone, under <a href="https://policies.google.com/privacy">Google's</a> or <a href="https://www.apple.com/legal/privacy/">Apple's</a> privacy policy. No trip history and no account information are sent.</p>
+      <p class="when">Only when you open the route screen. If you don't, you can type the distance yourself.</p>
     </div>
     <div class="data-item">
       <h3>Notifications</h3>
@@ -114,7 +113,7 @@
   <h2 id="changes">Changes to this policy</h2>
   <p>If the app ever starts handling data differently, this page will be updated before that version is released, and the date at the top will change. Every past version is kept in the <a href="https://github.com/JonasM-studio/JonasM-Studio.github.io/commits/main/mileage/privacy/index.html">public change history</a>.</p>
   <ul class="changes">
-    <li>13 November 2026: added address search and choosing a route when you add or edit a drive.</li>
+    <li>13 November 2026: added searching for a place and choosing a route when you add or edit a drive. Removed opening Google Maps to check a route; the check now happens in the app.</li>
     <li>12 November 2026: added maps (Apple Maps on iPhone, Google Maps on Android, can be turned off), checking an estimated route in Google Maps, and the motion sensor on Android.</li>
     <li>2 November 2026: first version.</li>
   </ul>
