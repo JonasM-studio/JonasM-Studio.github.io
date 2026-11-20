@@ -1,6 +1,6 @@
 # CLAUDE.md — JonasM-Studio.github.io
 
-公开网站：Yujona Studio（开发者的工作室名，2026-11-19 起，原来署名 Jonas M）所有 App 的首页、隐私政策和支持页。仓库在组织 `JonasM-studio` 下，用 GitHub Pages 托管（main 分支根目录），网址 `https://jonasm-studio.github.io/`。**这个仓库是公开的**，任何人都能看到全部内容和历史。
+公开网站：Yujona Studio（开发者的工作室名，2026-11-19 起，原来署名 Jonas M）所有 App 的首页、隐私政策和支持页。仓库在组织 `JonasM-studio` 下，用 GitHub Pages 托管（main 分支根目录），网址 `https://yujona.com/`（2026-11-19 买的域名，配好后 `https://jonasm-studio.github.io/` 跳转过来；配好之前仍是旧网址）。**这个仓库是公开的**，任何人都能看到全部内容和历史。
 
 ## 硬性规定
 
@@ -18,7 +18,8 @@
 ## 结构
 
 ```
-index.html            首页（App 卡片 + 联系方式）
+index.html            首页（App 卡片 + 联系方式，邮箱 yujona.studio@gmail.com）
+robots.txt、sitemap.xml  给搜索引擎（Google Search Console）用；加页面时把网址加进 sitemap.xml
 style.css             共用样式（浅色 / 深色）
 privacy/              网站本身的隐私说明
 mileage/              里程 App：介绍、privacy/、support/

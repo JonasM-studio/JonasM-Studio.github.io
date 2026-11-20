@@ -1,6 +1,6 @@
 # JonasM-Studio.github.io
 
-Yujona Studio 的 App 网站：首页、隐私政策、支持页。网址：<https://jonasm-studio.github.io/>
+Yujona Studio 的 App 网站：首页、隐私政策、支持页。网址：<https://yujona.com/>（域名配好之前是 <https://jonasm-studio.github.io/>）
 
 | 页面 | 网址 | 填到哪里 |
 |---|---|---|
