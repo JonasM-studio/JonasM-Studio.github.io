@@ -8,7 +8,7 @@
 <meta name="description" content="Focused apps that keep your data on your device. No account required, no ads or tracking, and no subscriptions.">
 <meta property="og:title" content="Yujona Studio – Small, private apps">
 <meta property="og:description" content="Focused apps that keep your data on your device. No account required, no ads or tracking.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%23c98a00'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1' width='14' height='14' rx='4' fill='%2315201c'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,37 +18,48 @@
 </div></header>
 
 <main><div class="wrap">
-  <h1>Focused apps that keep your data on your device.</h1>
-  <p class="lede">Each app does one job and works without an account. Your data is stored on your device, not on our servers.</p>
+  <section class="hero">
+    <h1>Focused apps that keep your data on your device.</h1>
+    <p class="lede">Each app does one job and works without an account. Your data is stored on your device, not on our servers.</p>
+  </section>
 
-  <ul class="facts">
-    <li><b>Account</b>Not required</li>
-    <li><b>Ads</b>None</li>
-    <li><b>Price</b>Free or one-time purchase</li>
-  </ul>
-
-  <div class="cards">
-    <article class="card">
-      <span class="status">In testing</span>
-      <h2>Quillway</h2>
-      <p>Records drives automatically, alerts you when recording may have been interrupted, and exports logbooks as PDF, CSV or Excel.</p>
-      <p class="links"><a href="mileage/">About</a><a href="mileage/support/">Support</a><a href="mileage/privacy/">Privacy</a></p>
+  <div class="plates">
+    <article class="plate plate-quillway">
+      <img class="icon" src="assets/quillway-icon.png" width="112" height="112" alt="">
+      <div>
+        <span class="status">In testing</span>
+        <h2>Quillway</h2>
+        <p>Records drives automatically, alerts you when recording may have been interrupted, and exports logbooks as PDF, CSV or Excel.</p>
+        <p class="links"><a href="mileage/">About</a><a href="mileage/support/">Support</a><a href="mileage/privacy/">Privacy</a></p>
+      </div>
     </article>
-    <article class="card">
-      <span class="status">In testing</span>
-      <h2>Evenpitch</h2>
-      <p>A tuner and metronome for guitar, bass and ukulele. Works offline, including in flight mode.</p>
-      <p class="links"><a href="tuner/">About</a><a href="tuner/support/">Support</a><a href="tuner/privacy/">Privacy</a></p>
+    <article class="plate plate-evenpitch">
+      <img class="icon" src="assets/evenpitch-icon.png" width="112" height="112" alt="">
+      <div>
+        <span class="status">In testing</span>
+        <h2>Evenpitch</h2>
+        <p>A tuner and metronome for guitar, bass and ukulele. Works offline, including in flight mode.</p>
+        <p class="links"><a href="tuner/">About</a><a href="tuner/support/">Support</a><a href="tuner/privacy/">Privacy</a></p>
+      </div>
     </article>
   </div>
 
-  <h2 id="contact">Contact</h2>
-  <p>For questions, bug reports or suggestions, email <a href="mailto:yujona.studio@gmail.com">yujona.studio@gmail.com</a>.</p>
+  <ul class="facts home-facts">
+    <li><b>Account</b>Not required</li>
+    <li><b>Ads and tracking</b>None</li>
+    <li><b>Price</b>Free or one-time purchase</li>
+  </ul>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>For questions, bug reports or suggestions, email <a href="mailto:yujona.studio@gmail.com">yujona.studio@gmail.com</a>.</p>
+  </section>
 </div></main>
 
 <footer class="site-footer"><div class="wrap">
-  <p>© 2026 Yujona Studio · <a href="privacy/">About this website</a></p>
-  <p>This website does not use cookies, analytics or third-party scripts.</p>
+  <p>© 2026 Yujona Studio</p>
+  <nav aria-label="Footer"><a href="privacy/">About this website</a></nav>
+  <p class="fine">This website does not use cookies, analytics or third-party scripts.</p>
 </div></footer>
 </body>
 </html>
