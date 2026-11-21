@@ -1,4 +1,4 @@
-/* Yujona Studio apps site. System fonts only, no scripts, no third-party requests. */
+/* Yujona Studio apps site. System fonts only, no third-party scripts or requests. */
 
 :root {
   --bg: #f5f6f4;
@@ -176,6 +176,55 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
   .app-hero { grid-template-columns: 6fr 5fr; }
   .app-hero .plate { aspect-ratio: 1 / 1; order: 2; }
   .app-hero .plate .icon { width: 176px; height: 176px; border-radius: 40px; }
+}
+
+/* App film: a wide, quiet frame under the hero */
+.film { margin: 48px 0 8px; }
+@media (min-width: 1260px) { .film { margin-left: -64px; margin-right: -64px; } }
+.film-frame {
+  position: relative; overflow: hidden; border-radius: 28px;
+  aspect-ratio: 16 / 9; background: var(--film-bg, #000);
+  box-shadow: 0 0 0 1px rgba(21, 32, 28, 0.06), 0 40px 90px -30px rgba(21, 32, 28, 0.35), 0 12px 30px -12px rgba(21, 32, 28, 0.18);
+}
+.app-quillway .film-frame { --film-bg: #f2f2ed; }
+.app-evenpitch .film-frame { --film-bg: #0e0c0d; }
+@media (prefers-color-scheme: dark) {
+  .film-frame { box-shadow: 0 0 0 1px rgba(233, 237, 235, 0.09), 0 40px 90px -30px rgba(0, 0, 0, 0.7); }
+}
+.film video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.film-controls {
+  position: absolute; right: 18px; bottom: 18px; display: flex; gap: 8px;
+  opacity: 0; transition: opacity 0.25s ease;
+}
+.film.is-started .film-controls { opacity: 1; }
+.film-btn, .film-start {
+  display: grid; place-items: center; border: 0; padding: 0; cursor: pointer; color: #fff;
+  background: rgba(16, 20, 19, 0.52);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+.film-btn { width: 44px; height: 44px; border-radius: 50%; }
+.film-btn svg { width: 20px; height: 20px; }
+.film-btn:hover, .film-start:hover { background: rgba(16, 20, 19, 0.7); }
+.film-start {
+  position: absolute; left: 50%; top: 50%; width: 84px; height: 84px; margin: -42px 0 0 -42px;
+  border-radius: 50%; transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.film-start svg { width: 34px; height: 34px; margin-left: 4px; }
+.film.is-started .film-start { opacity: 0; transform: scale(0.9); pointer-events: none; }
+.film-btn:focus-visible, .film-start:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+.film figcaption { margin-top: 14px; font-size: 14px; color: var(--muted); }
+@media (max-width: 560px) {
+  .film { margin-top: 32px; }
+  .film-frame { border-radius: 18px; }
+  .film-controls { right: 10px; bottom: 10px; gap: 6px; }
+  .film-btn { width: 38px; height: 38px; }
+  .film-btn svg { width: 18px; height: 18px; }
+  .film-start { width: 64px; height: 64px; margin: -32px 0 0 -32px; }
+  .film-start svg { width: 26px; height: 26px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .film-controls, .film-start { transition: none; }
 }
 
 .features { list-style: none; padding: 0; margin: 8px 0 0; display: grid; border-top: 1px solid var(--line); }

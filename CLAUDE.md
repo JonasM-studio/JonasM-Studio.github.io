@@ -15,12 +15,17 @@
 6. 不承诺回复时限、上线日期或价格，除非用户明确确认过。
 7. **不写开发者的个人信息**：不介绍是谁、做什么、在哪个城市或国家、是不是一个人开发。署名只用 "Yujona Studio"（2026-11-19 起，原来是 "Jonas M"），正文用 "we" 或中性句式，不用 "I"。
 
+## 宣传片
+
+两个 App 页面的介绍下面各有一段 30 秒宣传片（`assets/quillway-film.mp4`、`assets/evenpitch-film.mp4`），画面是 App 的真实录屏，只用演示数据（悉尼、Alex Sample），不含任何真实行程或个人信息。`assets/film.js` 是本站唯一的脚本，自己写的，只控制视频播放（在屏幕上时静音自动播放、离开时暂停、系统开了"减少动态效果"时不自动播放），不发任何请求；没有脚本时视频照样能用系统自带的控件播放。换片子时文件名不变，直接覆盖。
+
 ## 结构
 
 ```
 index.html            首页（App 卡片 + 联系方式，邮箱 yujona.studio@gmail.com）
 robots.txt、sitemap.xml  给搜索引擎（Google Search Console）用；加页面时把网址加进 sitemap.xml
 style.css             共用样式（浅色 / 深色）
+assets/               图标、宣传片（*-film.mp4 和封面 *-film.jpg）、film.js
 privacy/              网站本身的隐私说明
 mileage/              里程 App：介绍、privacy/、support/
 tuner/                调音器 App：介绍、privacy/、support/
